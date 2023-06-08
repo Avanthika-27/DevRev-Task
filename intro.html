@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to the Library</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+
+      .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        z-index: -1;
+      }
+
+      .video-container video {
+        min-width: 100%;
+        min-height: 100%;
+        width: auto;
+        height: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        text-align: center;
+        color: #fff;
+      }
+
+      h1 {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 40px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 15px 30px;
+        background-color: #663399;
+        color: #fff;
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn:hover {
+        background-color: #512da8;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <video autoplay muted loop>
+        <source
+          src="assets/pexels-cottonbro-studio-4873467-4096x2160-25fps.mp4"
+          type="video/mp4"
+        />
+      </video>
+    </div>
+
+    <div class="container">
+      <h1>Welcome to the World of Readers</h1>
+      <p>Discover a vast collection of books for every genre</p>
+      <a href="content.html" class="btn">Explore Genres</a>
+    </div>
+  </body>
+</html>

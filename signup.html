@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="image">
+        <img
+          src="./assets/kadarius-seegars-2HvavRLZjYM-unsplash.jpg"
+          alt="Sign Up Image"
+        />
+      </div>
+      <div class="form">
+        <h1>Sign Up</h1>
+        <div id="signup-error" class="error"></div>
+        <input type="email" id="signup-email" placeholder="Email" />
+        <input type="password" id="signup-password" placeholder="Password" />
+        <button onclick="signup()">Sign Up</button>
+        <p>Already have an account? <a href="login.html">Login</a></p>
+      </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth-compat.js"></script>
+    <script src="./firebase.js"></script>
+    <script src="signup.js"></script>
+  </body>
+</html>

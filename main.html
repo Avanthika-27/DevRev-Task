@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Library Management</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="#">Library Management</a>
+      </div>
+      <div class="Genre">
+        <a href="content.html">Genre</a>
+      </div>
+      <div class="logout">
+        <a href="index.html">Logout</a>
+      </div>
+    </nav>
+
+    <div id="filters">
+      <input type="text" id="titleFilter" placeholder="Filter by Title" />
+      <input type="text" id="authorFilter" placeholder="Filter by Author" />
+      <input type="text" id="subjectFilter" placeholder="Filter by Subject" />
+      <input
+        type="text"
+        id="publishDateFilter"
+        placeholder="Filter by Publish Date"
+      />
+    </div>
+
+    <div id="bookCount"></div>
+
+    <div id="bookContainer"></div>
+
+    <div id="pagination">
+      <button id="prevBtn" disabled>Prev</button>
+      <button id="nextBtn" disabled>Next</button>
+    </div>
+
+    <div id="userProfile">
+      <h2>My Books</h2>
+      <div id="savedBooks"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
